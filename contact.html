@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — LinkUp</title>
+<link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="./index.html" class="brand">
+      <div class="brand-mark gradient-primary"><span style="color:var(--primary-foreground);font-weight:700">L</span></div>
+      <span style="font-weight:700">LinkUp <span style="opacity:.6;font-weight:400;font-size:.9em">by My Guest</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./how-it-works.html">How it works</a>
+      <a href="./events.html">Events</a>
+      <a href="./updates.html">Updates</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Contact us</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-primary shadow-glow download-button">Download</button>
+      <button id="mobileToggle" class="mobile-toggle">Menu</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="container">
+      <a href="./index.html">Home</a>
+      <a href="./how-it-works.html">How it works</a>
+      <a href="./events.html">Events</a>
+      <a href="./updates.html">Updates</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Contact us</a>
+    </div>
+  </div>
+</nav>
+<main style="padding-top:88px">
+  <section class="gradient-hero section animate-on-scroll">
+    <div class="container">
+      <div class="animate-on-scroll" style="text-align:center;margin-bottom:32px">
+        <h1 style="font-size:40px;margin:0 0 12px">Contact <span class="gradient-text">Us</span></h1>
+        <p style="color:var(--muted-foreground);font-size:18px;max-width:640px;margin:0 auto">
+          Have a question or some feedback? We'd love to hear it!
+        </p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:32px;max-width:960px;margin:0 auto">
+        <div class="animate-on-scroll">
+          <h2 style="font-size:24px;margin:0 0 16px">Get in Touch</h2>
+          <p style="color:var(--muted-foreground);margin:0 0 24px">
+            Whether you have a question about features, pricing, or anything else, our team is ready to answer all your questions.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:12px;align-items:flex-start">
+              <div class="gradient-primary" style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--primary-foreground);font-size:22px">✉</div>
+              <div>
+                <h3 style="margin:0 0 4px;font-size:16px">Email</h3>
+                <a href="mailto:info@linkupapp.com" style="color:var(--muted-foreground);text-decoration:none">info@linkupapp.com</a>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start">
+              <div class="gradient-primary" style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--primary-foreground);font-size:22px">📍</div>
+              <div>
+                <h3 style="margin:0 0 4px;font-size:16px">Location</h3>
+                <p style="margin:0;color:var(--muted-foreground)">Miami, FL & New York, NY</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start">
+              <div class="gradient-primary" style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--primary-foreground);font-size:22px">📞</div>
+              <div>
+                <h3 style="margin:0 0 4px;font-size:16px">Phone</h3>
+                <p style="margin:0;color:var(--muted-foreground)">+1 (555) 123-4567</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll" style="border-radius:24px;border:1px solid var(--border);padding:24px">
+          <form onsubmit="event.preventDefault(); alert('Thank you! We have received your message.');">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+              <div style="display:flex;flex-direction:column;gap:4px">
+                <label for="firstName" style="font-size:14px;font-weight:500">First Name *</label>
+                <input id="firstName" required style="padding:10px;border:1px solid var(--border);border-radius:12px">
+              </div>
+              <div style="display:flex;flex-direction:column;gap:4px">
+                <label for="lastName" style="font-size:14px;font-weight:500">Last Name *</label>
+                <input id="lastName" required style="padding:10px;border:1px solid var(--border);border-radius:12px">
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:12px">
+              <label for="emailField" style="font-size:14px;font-weight:500">Email *</label>
+              <input id="emailField" type="email" required style="padding:10px;border:1px solid var(--border);border-radius:12px">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:16px">
+              <label for="messageField" style="font-size:14px;font-weight:500">Message</label>
+              <textarea id="messageField" rows="5" required style="padding:10px;border:1px solid var(--border);border-radius:12px;resize:none"></textarea>
+            </div>
+            <button class="btn btn-primary" style="width:100%;border-radius:999px;height:48px;font-size:16px">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container section">
+    <div class="grid">
+      <div>
+        <a href="./index.html" class="brand">
+          <div class="brand-mark" style="background:var(--primary);"><span style="color:var(--primary-foreground);font-weight:700">L</span></div>
+          <span style="font-weight:700">LinkUp <span style="opacity:.6;font-weight:400;font-size:.9em">by My Guest</span></span>
+        </a>
+        <p style="opacity:.7;max-width:520px;margin:12px 0 16px">
+          Sharing experiences, made simple. Join the world's leading app for meeting new people and sharing memorable experiences.
+        </p>
+        <div class="store-row">
+          <a href="#"><img src="./assets/apple-store.png" alt="Download on App Store" style="height:40px"></a>
+          <a href="#"><img src="./assets/google-play.png" alt="Get it on Google Play" style="height:40px"></a>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:12px">
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">📷</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">🐦</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">💼</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">▶️</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px">Quick Links</h4>
+        <a href="./careers.html">Careers</a><br>
+        <a href="./privacy.html">Privacy Policy</a><br>
+        <a href="./terms.html">Terms & Conditions</a><br>
+        <a href="./refunds.html">Refund Policy</a>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px">Contact</h4>
+        <a href="mailto:info@linkupapp.com">info@linkupapp.com</a>
+      </div>
+    </div>
+    <div class="bottom">© 2026 LinkUp Inc. All rights reserved.</div>
+  </div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>

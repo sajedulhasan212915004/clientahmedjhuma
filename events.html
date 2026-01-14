@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events — LinkUp</title>
+<link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="./index.html" class="brand">
+      <div class="brand-mark gradient-primary"><span style="color:var(--primary-foreground);font-weight:700">L</span></div>
+      <span style="font-weight:700">LinkUp <span style="opacity:.6;font-weight:400;font-size:.9em">by My Guest</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./how-it-works.html">How it works</a>
+      <a href="./events.html">Events</a>
+      <a href="./updates.html">Updates</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Contact us</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-primary shadow-glow download-button">Download</button>
+      <button id="mobileToggle" class="mobile-toggle">Menu</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="container">
+      <a href="./index.html">Home</a>
+      <a href="./how-it-works.html">How it works</a>
+      <a href="./events.html">Events</a>
+      <a href="./updates.html">Updates</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Contact us</a>
+    </div>
+  </div>
+</nav>
+<main style="padding-top:88px">
+  <section class="gradient-hero section animate-on-scroll">
+    <div class="container">
+      <div class="animate-on-scroll" style="text-align:center;margin-bottom:32px">
+        <h1 style="font-size:40px;margin:0 0 12px">Discover <span class="gradient-text">Events</span></h1>
+        <p style="color:var(--muted-foreground);font-size:18px;max-width:640px;margin:0 auto">
+          Find amazing events happening near you and join the party.
+        </p>
+      </div>
+
+      <div class="animate-on-scroll" style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:32px">
+        <button class="event-filter btn-pill active" data-filter="All">All</button>
+        <button class="event-filter btn-pill" data-filter="Festival">Festival</button>
+        <button class="event-filter btn-pill" data-filter="Concert">Concert</button>
+        <button class="event-filter btn-pill" data-filter="Party">Party</button>
+        <button class="event-filter btn-pill" data-filter="Lounge">Lounge</button>
+      </div>
+
+      <div class="grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:32px">
+        <div class="card animate-on-scroll event-card" data-category="Festival" style="position:relative;padding:24px;border-radius:24px;background:linear-gradient(135deg,rgba(129,140,248,.2),rgba(45,212,191,.15));border:1px solid var(--border)">
+          <div style="position:absolute;top:16px;right:16px">
+            <span style="padding:4px 10px;border-radius:999px;background:var(--accent);color:var(--accent-foreground);font-size:12px;font-weight:600">Festival</span>
+          </div>
+          <h3 style="font-size:22px;margin:0 0 12px">Trafalgar Square Live Festival</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;color:var(--muted-foreground);margin-bottom:16px;font-size:14px">
+            <span>Jan 10</span>
+            <span>7:30 PM</span>
+            <span>Trafalgar Square</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:22px;font-weight:700;color:var(--primary)">$48.00</span>
+            <button class="btn btn-primary join-button">Join Now</button>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll event-card" data-category="Concert" style="position:relative;padding:24px;border-radius:24px;background:linear-gradient(135deg,rgba(129,140,248,.2),rgba(45,212,191,.15));border:1px solid var(--border)">
+          <div style="position:absolute;top:16px;right:16px">
+            <span style="padding:4px 10px;border-radius:999px;background:var(--accent);color:var(--accent-foreground);font-size:12px;font-weight:600">Concert</span>
+          </div>
+          <h3 style="font-size:22px;margin:0 0 12px">Hyde Park Summer Live Concert</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;color:var(--muted-foreground);margin-bottom:16px;font-size:14px">
+            <span>Feb 01</span>
+            <span>4:30 AM</span>
+            <span>Hyde Park</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:22px;font-weight:700;color:var(--primary)">$750.00</span>
+            <button class="btn btn-primary join-button">Join Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+        <div class="card animate-on-scroll event-card" data-category="Festival">
+          <div style="height:140px;border-radius:16px;background:linear-gradient(135deg,rgba(129,140,248,.1),rgba(45,212,191,.1));margin-bottom:12px;position:relative">
+            <span style="position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:999px;background:var(--accent);color:var(--accent-foreground);font-size:12px;font-weight:600">Festival</span>
+          </div>
+          <h3 style="margin:0 0 8px;font-size:18px">Toronto Summer Music Festival</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;color:var(--muted-foreground);font-size:14px;margin-bottom:8px">
+            <span>Mar 15</span>
+            <span>Harbour Centre</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-weight:700;color:var(--primary)">$125.00</span>
+            <button class="btn btn-outline view-event-button">View Event</button>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll event-card" data-category="Party">
+          <div style="height:140px;border-radius:16px;background:linear-gradient(135deg,rgba(129,140,248,.1),rgba(45,212,191,.1));margin-bottom:12px;position:relative">
+            <span style="position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:999px;background:var(--accent);color:var(--accent-foreground);font-size:12px;font-weight:600">Party</span>
+          </div>
+          <h3 style="margin:0 0 8px;font-size:18px">Beach Miami Events</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;color:var(--muted-foreground);font-size:14px;margin-bottom:8px">
+            <span>Apr 20</span>
+            <span>South Beach</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-weight:700;color:var(--primary)">$89.00</span>
+            <button class="btn btn-outline view-event-button">View Event</button>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll event-card" data-category="Lounge">
+          <div style="height:140px;border-radius:16px;background:linear-gradient(135deg,rgba(129,140,248,.1),rgba(45,212,191,.1));margin-bottom:12px;position:relative">
+            <span style="position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:999px;background:var(--accent);color:var(--accent-foreground);font-size:12px;font-weight:600">Lounge</span>
+          </div>
+          <h3 style="margin:0 0 8px;font-size:18px">NYC Rooftop Lounge</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;color:var(--muted-foreground);font-size:14px;margin-bottom:8px">
+            <span>May 05</span>
+            <span>Manhattan</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-weight:700;color:var(--primary)">$150.00</span>
+            <button class="btn btn-outline view-event-button">View Event</button>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll event-card" data-category="Party">
+          <div style="height:140px;border-radius:16px;background:linear-gradient(135deg,rgba(129,140,248,.1),rgba(45,212,191,.1));margin-bottom:12px;position:relative">
+            <span style="position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:999px;background:var(--accent);color:var(--accent-foreground);font-size:12px;font-weight:600">Party</span>
+          </div>
+          <h3 style="margin:0 0 8px;font-size:18px">LA Pool Party</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;color:var(--muted-foreground);font-size:14px;margin-bottom:8px">
+            <span>Jun 15</span>
+            <span>Hollywood Hills</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-weight:700;color:var(--primary)">$200.00</span>
+            <button class="btn btn-outline view-event-button">View Event</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container section">
+    <div class="grid">
+      <div>
+        <a href="./index.html" class="brand">
+          <div class="brand-mark" style="background:var(--primary);"><span style="color:var(--primary-foreground);font-weight:700">L</span></div>
+          <span style="font-weight:700">LinkUp <span style="opacity:.6;font-weight:400;font-size:.9em">by My Guest</span></span>
+        </a>
+        <p style="opacity:.7;max-width:520px;margin:12px 0 16px">
+          Sharing experiences, made simple. Join the world's leading app for meeting new people and sharing memorable experiences.
+        </p>
+        <div class="store-row">
+          <a href="#"><img src="./assets/apple-store.png" alt="Download on App Store" style="height:40px"></a>
+          <a href="#"><img src="./assets/google-play.png" alt="Get it on Google Play" style="height:40px"></a>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:12px">
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">📷</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">🐦</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">💼</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">▶️</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px">Quick Links</h4>
+        <a href="./careers.html">Careers</a><br>
+        <a href="./privacy.html">Privacy Policy</a><br>
+        <a href="./terms.html">Terms & Conditions</a><br>
+        <a href="./refunds.html">Refund Policy</a>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px">Contact</h4>
+        <a href="mailto:info@linkupapp.com">info@linkupapp.com</a>
+      </div>
+    </div>
+    <div class="bottom">© 2026 LinkUp Inc. All rights reserved.</div>
+  </div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>

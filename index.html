@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkUp — HTML/CSS/JS Version</title>
+<link rel="icon" href="./assets/favicon.ico">
+<link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav">
+    <div class="container nav-inner">
+    <a href="./index.html" class="brand">
+      <div class="brand-mark gradient-primary"><span style="color:var(--primary-foreground);font-weight:700">L</span></div>
+      <span style="font-weight:700">LinkUp <span style="opacity:.6;font-weight:400;font-size:.9em">by My Guest</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./how-it-works.html">How it works</a>
+      <a href="./events.html">Events</a>
+      <a href="./updates.html">Updates</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Contact us</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-primary shadow-glow download-button">Download</button>
+      <button id="mobileToggle" class="mobile-toggle">Menu</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="container">
+      <a href="./index.html">Home</a>
+      <a href="./how-it-works.html">How it works</a>
+      <a href="./events.html">Events</a>
+      <a href="./updates.html">Updates</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Contact us</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:88px">
+  <section class="gradient-hero section animate-on-scroll">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="col animate-on-scroll">
+          <p style="color:var(--primary);font-weight:600;letter-spacing:.08em;margin:0 0 8px">Share and join tables with people nearby</p>
+          <h1 style="font-size:48px;line-height:1.1;margin:0 0 16px">Bring the <span class="gradient-text">party</span><br>to your table</h1>
+          <p style="color:var(--muted-foreground);font-size:18px;max-width:520px;margin:0 0 24px">
+            The world's leading app for meeting new people, splitting costs, and sharing memorable experiences.
+          </p>
+          <div class="store-row">
+            <a href="#"><img src="./assets/apple-store.png" alt="Download on App Store" style="height:48px"></a>
+            <a href="#"><img src="./assets/google-play.png" alt="Get it on Google Play" style="height:48px"></a>
+          </div>
+        </div>
+        <div class="col animate-on-scroll" style="display:flex;justify-content:center">
+          <img src="./assets/app-home.png" alt="LinkUp App" class="animate-float" style="width:320px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section animate-on-scroll" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <p style="text-align:center;color:var(--muted-foreground);margin:0 0 24px">The new age of sharing and networking. As seen in:</p>
+      <div class="press-logos">
+        <span style="font-weight:700;opacity:.5">Forbes</span>
+        <span style="font-weight:700;opacity:.5">New York Weekly</span>
+        <span style="font-weight:700;opacity:.5">US Magazine</span>
+        <span style="font-weight:700;opacity:.5">Haute Living</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section animate-on-scroll">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="col animate-on-scroll" style="order:2;display:flex;justify-content:center">
+          <img src="./assets/app-map.png" alt="Map Interface" class="animate-float-delayed" style="width:320px">
+        </div>
+        <div class="col animate-on-scroll" style="order:1">
+          <h2 style="font-size:32px;margin:0 0 8px">Join the <span class="gradient-text">party!</span></h2>
+          <p style="color:var(--muted-foreground);max-width:520px;margin:0 0 24px">
+            LinkUp is the world's leading app for meeting new people, splitting costs, and sharing memorable nightlife experiences.
+          </p>
+          <div class="features">
+            <div class="card animate-on-scroll">
+              <h3 style="margin:0 0 6px">Seamless Event Planning</h3>
+              <p style="margin:0;color:var(--muted-foreground)">Collaborate and join with new people to reserve your social experience</p>
+            </div>
+            <div class="card animate-on-scroll">
+              <h3 style="margin:0 0 6px">Find Your Perfect Event</h3>
+              <p style="margin:0;color:var(--muted-foreground)">Discover amazing events happening near you in real-time</p>
+            </div>
+            <div class="card animate-on-scroll">
+              <h3 style="margin:0 0 6px">Expand Your Social Circle</h3>
+              <p style="margin:0;color:var(--muted-foreground)">Meet new people and grow your network at events you love</p>
+            </div>
+            <div class="card animate-on-scroll">
+              <h3 style="margin:0 0 6px">Cost Splitting</h3>
+              <p style="margin:0;color:var(--muted-foreground)">Effortlessly share costs with friends or join an existing table</p>
+            </div>
+          </div>
+          <div class="store-row" style="margin-top:16px">
+            <a href="#"><img src="./assets/apple-store.png" alt="Download on App Store" style="height:40px"></a>
+            <a href="#"><img src="./assets/google-play.png" alt="Get it on Google Play" style="height:40px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gradient-primary animate-on-scroll" style="color:var(--primary-foreground);text-align:center">
+    <div class="container">
+      <h2 style="font-size:32px;margin:0 0 12px">See How It Works</h2>
+      <p style="opacity:.8;max-width:680px;margin:0 auto 20px">LinkUp is an all-in-one sharing and joining platform for all types of social events.</p>
+      <a href="./how-it-works.html" class="btn btn-outline" style="color:inherit;border-color:rgba(255,255,255,.3)">Watch Video →</a>
+    </div>
+  </section>
+
+  <section class="section animate-on-scroll">
+    <div class="container">
+      <h2 style="text-align:center;margin:0 0 24px"><span class="gradient-text">User Reviews</span></h2>
+      <div class="reviews">
+        <div class="card animate-on-scroll"><p>"This app is a must for anyone looking to party in Miami or NYC. Who's been gatekeeping?!"</p><p style="opacity:.7;margin-top:8px">— Isabella Nunez</p></div>
+        <div class="card animate-on-scroll"><p>"I didn't think an app could change how I socialize. Now I go to events and meet people I never would have had access to."</p><p style="opacity:.7;margin-top:8px">— David Walker</p></div>
+        <div class="card animate-on-scroll"><p>"Whoever decided to put Instagram, Tinder, and OpenTable in a mixing pot and create LinkUp.. That's pretty genius."</p><p style="opacity:.7;margin-top:8px">— Kaylyn Olsen</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="section cta-sky animate-on-scroll">
+    <div class="container" style="text-align:center">
+      <h2 style="font-size:32px;margin:0 0 12px">Ready to <span class="gradient-text">party?</span></h2>
+      <p style="color:var(--muted-foreground);max-width:680px;margin:0 auto 20px">Download LinkUp now and unlock a whole new social world!</p>
+      <div class="store-row" style="justify-content:center">
+        <a href="#"><img src="./assets/apple-store.png" alt="Download on App Store" style="height:48px"></a>
+        <a href="#"><img src="./assets/google-play.png" alt="Get it on Google Play" style="height:48px"></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container section">
+    <div class="grid">
+      <div>
+        <a href="./index.html" class="brand">
+          <div class="brand-mark" style="background:var(--primary);"><span style="color:var(--primary-foreground);font-weight:700">L</span></div>
+          <span style="font-weight:700">LinkUp <span style="opacity:.6;font-weight:400;font-size:.9em">by My Guest</span></span>
+        </a>
+        <p style="opacity:.7;max-width:520px;margin:12px 0 16px">
+          Sharing experiences, made simple. Join the world's leading app for meeting new people and sharing memorable experiences.
+        </p>
+        <div class="store-row">
+          <a href="#"><img src="./assets/apple-store.png" alt="Download on App Store" style="height:40px"></a>
+          <a href="#"><img src="./assets/google-play.png" alt="Get it on Google Play" style="height:40px"></a>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:12px">
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">📷</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">🐦</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">💼</a>
+          <a href="#" style="width:40px;height:40px;border-radius:999px;background:color-mix(in srgb, var(--primary-foreground) 10%, transparent);display:flex;align-items:center;justify-content:center;text-decoration:none;color:inherit">▶️</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px">Quick Links</h4>
+        <a href="./careers.html">Careers</a><br>
+        <a href="./privacy.html">Privacy Policy</a><br>
+        <a href="./terms.html">Terms & Conditions</a><br>
+        <a href="./refunds.html">Refund Policy</a>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px">Contact</h4>
+        <a href="mailto:info@linkupapp.com">info@linkupapp.com</a>
+      </div>
+    </div>
+    <div class="bottom">© 2026 LinkUp Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
